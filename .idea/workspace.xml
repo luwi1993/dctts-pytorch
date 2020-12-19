@@ -14,7 +14,7 @@
       <change beforePath="$PROJECT_DIR$/../audio_process/mnist_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/mnist_example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../audio_process/models/CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/models/CNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../audio_process/models/RNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/models/RNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/yuki_tts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/yuki_tts.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/modules/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/modules/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +146,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../audio_process" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -368,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608413233172</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="after preprocessing i am recieving nans trying to train text2mel">
+      <created>1608414166316</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608414166316</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -399,11 +406,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="batch" />
     <MESSAGE value="fix hyperparams for local" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix hyperparams for local" />
+    <MESSAGE value="after preprocessing i am recieving nans trying to train text2mel" />
+    <option name="LAST_COMMIT_MESSAGE" value="after preprocessing i am recieving nans trying to train text2mel" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/dctts_pytorch$data.coverage" NAME="data Coverage Results" MODIFIED="1608405663185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pkg" />
-    <SUITE FILE_PATH="coverage/dctts_pytorch$main.coverage" NAME="main Coverage Results" MODIFIED="1608413162311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dctts_pytorch$main.coverage" NAME="main Coverage Results" MODIFIED="1608414226507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../pkg/preprocess.py" />

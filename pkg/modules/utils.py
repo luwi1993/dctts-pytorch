@@ -7,7 +7,7 @@ class SequentialMaker:
         self.dict_ = OrderedDict()
 
     def add_module(self, name, module):
-        if hasattr(module, "weight"):
+        if hasattr(module, "weight") and name != "char-embed":
             module = nn.utils.weight_norm(module)
         self.dict_[name] = module
 
