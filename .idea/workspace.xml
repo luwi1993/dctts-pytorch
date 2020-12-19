@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2314b4e-031d-4933-8088-3601bd17649c" name="Default" comment="" />
+    <list default="true" id="f2314b4e-031d-4933-8088-3601bd17649c" name="Default" comment="fix hyperparams for local">
+      <change afterPath="$PROJECT_DIR$/../audio_process/Attention.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../audio_process/models/AudioEncoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../audio_process/models/utils/SequentialMaker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audio_process/EmotionClassifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/EmotionClassifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audio_process/SoundDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/SoundDataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audio_process/SoundObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/SoundObject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audio_process/debug.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/debug.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audio_process/files/dataloader.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audio_process/hyperparams.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/hyperparams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audio_process/mnist_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/mnist_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audio_process/models/CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/models/CNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audio_process/models/RNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/models/RNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/yuki_tts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/yuki_tts.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +146,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../audio_process" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -347,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529144867210</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix hyperparams for local">
+      <created>1608413233172</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608413233172</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -377,11 +398,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="batch" />
-    <option name="LAST_COMMIT_MESSAGE" value="batch" />
+    <MESSAGE value="fix hyperparams for local" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix hyperparams for local" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/dctts_pytorch$data.coverage" NAME="data Coverage Results" MODIFIED="1608405663185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pkg" />
-    <SUITE FILE_PATH="coverage/dctts_pytorch$main.coverage" NAME="main Coverage Results" MODIFIED="1608413117583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dctts_pytorch$main.coverage" NAME="main Coverage Results" MODIFIED="1608413162311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../pkg/preprocess.py" />
