@@ -156,7 +156,9 @@ class Text2Mel(nn.Module):
 
     def forward(self, texts, shift_mels, prev_time=None, prev_atten=None):
         k, v = self.texts_enc_(texts)
+        print("mels {}".format(shift_mels.shape))
         q = self.audio_enc_(shift_mels)
+        print("output {}".format(q.shape))
         a = F.softmax(torch.bmm(k.transpose(1, 2), q) / np.sqrt(Hyper.dim_d), 1)
         if not (self.training or prev_time is None or prev_atten is None):
             # forcibly incremental attention, at inference phase

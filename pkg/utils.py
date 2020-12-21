@@ -107,7 +107,7 @@ def plot_spectrum(spectrum, name, gs, colorbar=False, dir=Hyper.logdir):
         os.mkdir(dir)
 
     fig, ax = plt.subplots()
-    im = ax.imshow(np.flip(spectrum, 0), cmap="jet", aspect=0.2 * spectrum.shape[1] / spectrum.shape[0])
+    im = ax.imshow(torch.flip(spectrum, [0]), cmap="jet", aspect=0.2 * spectrum.shape[1] / spectrum.shape[0])
     if colorbar:
         fig.colorbar(im)
     plt.title('{} Steps'.format(gs))
