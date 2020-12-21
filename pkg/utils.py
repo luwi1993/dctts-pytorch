@@ -12,7 +12,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from num2words import num2words
 from pkg.hyper import Hyper
-
+import torch
 
 def get_spectrum(wav_path):
     '''

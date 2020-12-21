@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2314b4e-031d-4933-8088-3601bd17649c" name="Default" comment="fix error in SequentialMaker.py">
-      <change beforePath="$PROJECT_DIR$/../audio_process/EmotionClassifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/EmotionClassifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../audio_process/SoundDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/SoundDataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../audio_process/hyperparams.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/hyperparams.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../audio_process/models/AudioEncoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../audio_process/models/AudioEncoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/networks.py" afterDir="false" />
+    <list default="true" id="f2314b4e-031d-4933-8088-3601bd17649c" name="Default" comment="fix flip">
+      <change beforePath="$PROJECT_DIR$/pkg/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -355,7 +350,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529081146364</updated>
-      <workItem from="1608537530791" duration="1018000" />
+      <workItem from="1608537530791" duration="1382000" />
     </task>
     <task id="LOCAL-00001" summary="batch">
       <created>1529144867210</created>
@@ -385,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608414270676</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix flip">
+      <created>1608541227880</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608541227881</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -421,7 +423,8 @@
     <MESSAGE value="fix hyperparams for local" />
     <MESSAGE value="after preprocessing i am recieving nans trying to train text2mel" />
     <MESSAGE value="fix error in SequentialMaker.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix error in SequentialMaker.py" />
+    <MESSAGE value="fix flip" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix flip" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/dctts_pytorch$data.coverage" NAME="data Coverage Results" MODIFIED="1608405663185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pkg" />
