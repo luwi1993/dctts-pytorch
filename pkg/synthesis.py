@@ -14,8 +14,8 @@ def synthesis(text_list, plot=True):
     # load graphs
     graph0 = Text2Mel()
     graph1 = SuperRes()
-    load(os.path.join(Hyper.logdir, "text2mel/pkg/trained.pkg"), graph0, device='cpu')
-    load(os.path.join(Hyper.logdir, "superres/pkg/trained.pkg"), graph1, device='cpu')
+    load(os.path.join(Hyper.logdir, "text2mel/SoundClasses/trained.SoundClasses"), graph0, device='cpu')
+    load(os.path.join(Hyper.logdir, "superres/SoundClasses/trained.SoundClasses"), graph1, device='cpu')
     graph0.eval()
     graph1.eval()
     # make dir
