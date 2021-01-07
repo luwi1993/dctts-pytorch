@@ -95,7 +95,6 @@ class Evaluator:
             time_measurements = info["time_measurements"]
             self.evaluate_time_measurements(time_measurements)
             self.log["relative_synthesis_time"].append(self.log["duration"][-1] / self.log["duration_total"][-1])
-        print("LOG: {}".format(self.log))
 
     def export(self):
         max_len = [len(self.log[key]) for key in self.log.keys()]

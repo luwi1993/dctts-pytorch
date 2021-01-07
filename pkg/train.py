@@ -196,8 +196,6 @@ def train_text2mel(load_trained):
             if global_step % Hyper.synth_freq == 0:
                 evaluator.evaluate(loop_cnt)
                 evaluator.export()
-                print("EXPORT")
-                sys.exit(0)
 
             # plot
             if global_step % 100 == 0:
