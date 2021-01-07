@@ -1,6 +1,7 @@
 from __future__ import division
 
 import os
+import sys
 import torch
 import torch.nn as nn
 import numpy as np
@@ -9,7 +10,7 @@ from pkg.networks import Text2Mel, SuperRes
 from pkg.data import BatchMaker, load_data
 from pkg.hyper import Hyper
 from pkg.utils import PrettyBar, plot_spectrum, plot_attention, plot_loss
-
+from pkg.evaluation import Evaluator
 
 class LogHelper(object):
     def __init__(self, loss_name, logdir):
@@ -125,6 +126,7 @@ def train_text2mel(load_trained):
                            graph, {"mels": criterion_mels, "bd1": criterion_bd1, "atten": criterion_atten}, optimizer)
         dynamic_guide *= Hyper.guide_decay ** (load_trained * 1000)
 
+    evaluator = Evaluator()
     for loop_cnt in range(int(Hyper.num_batches / batch_maker.num_batches() + 0.5)):
         print("loop", loop_cnt)
         bar = PrettyBar(batch_maker.num_batches())
@@ -191,6 +193,12 @@ def train_text2mel(load_trained):
                 dynamic_guide = Hyper.guide_lowbound
             bar.set_description("gs: {}, mels: {}, bd1: {}, atten: {}, scale: {}".format(global_step, loss_str0(), loss_str1(), loss_str2(), "%4f" % dynamic_guide))
 
+            if global_step % Hyper.synth_freq == 0:
+                evaluator.evaluate(loop_cnt)
+                evaluator.export()
+                print("EXPORT")
+                sys.exit(0)
+
             # plot
             if global_step % 100 == 0:
                 gs = 0
@@ -252,7 +260,6 @@ def train_superres(load_trained):
                            graph, {"mags": criterion_mags, "bd2": criterion_bd2}, optimizer)
 
     for loop_cnt in range(int(Hyper.num_batches / batch_maker.num_batches() + 0.5)):
-        print("loop", loop_cnt)
         bar = PrettyBar(batch_maker.num_batches())
         bar.set_description("training...")
         loss_str0 = MovingAverage()

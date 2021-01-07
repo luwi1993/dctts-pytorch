@@ -20,7 +20,8 @@ class Hyper:
     feat_dir = os.path.join(root_dir, "features")
     logdir = os.path.join(root_dir, "logdir")
     data_dir = "/Users/luwi/Documents/Datasets/Emotional_Speech/LJSpeech-1.1"
-    
+    test_data_dir = "/Users/luwi/Documents/Datasets/Emotional_Speech/LJSpeech-1.1"
+    synth_freq = 1
     # data
     vocab = "PE abcdefghijklmnopqrstuvwxyz'.?"  # P: padding, E: end of string
     data_max_text_length = 200
